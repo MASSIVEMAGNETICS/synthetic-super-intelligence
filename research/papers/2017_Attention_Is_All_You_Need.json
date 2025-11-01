@@ -1,0 +1,34 @@
+{
+  "title": "Attention Is All You Need",
+  "authors": [
+    "Ashish Vaswani",
+    "Noam Shazeer",
+    "Niki Parmar",
+    "Jakob Uszkoreit",
+    "Llion Jones",
+    "Aidan N. Gomez",
+    "Lukasz Kaiser",
+    "Illia Polosukhin"
+  ],
+  "abstract": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train.",
+  "year": 2017,
+  "url": "https://arxiv.org/abs/1706.03762",
+  "doi": null,
+  "keywords": [
+    "transformer",
+    "attention mechanism",
+    "neural networks",
+    "machine translation",
+    "sequence transduction"
+  ],
+  "concepts": [
+    "attention mechanism",
+    "transformer",
+    "neural networks",
+    "machine translation",
+    "encoder decoder"
+  ],
+  "citations": [],
+  "notes": "Foundational paper that introduced the Transformer architecture, which became the basis for modern large language models.",
+  "added_date": "2025-11-01T06:20:00"
+}
