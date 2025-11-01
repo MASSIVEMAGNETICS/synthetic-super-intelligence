@@ -1,0 +1,30 @@
+# SSI Research System Configuration
+
+system:
+  name: "SSI Codex"
+  version: "0.1.0"
+  data_directory: "data"
+  research_directory: "research"
+
+paths:
+  papers: "research/papers"
+  notes: "research/notes"
+  concepts: "research/concepts"
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  cache: "data/cache"
+  knowledge_graph: "data/knowledge_graph.json"
+
+extraction:
+  min_concept_frequency: 2
+  max_concepts_per_paper: 50
+  enable_auto_extraction: true
+
+knowledge_graph:
+  auto_build: false
+  update_on_paper_add: true
+  clustering_algorithm: "connected_components"
+
+output:
+  verbose: true
+  format: "json"

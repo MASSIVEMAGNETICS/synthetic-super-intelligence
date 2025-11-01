@@ -1,0 +1,133 @@
+{
+  "nodes": [
+    {
+      "id": "attention mechanism",
+      "attrs": {
+        "type": "concept"
+      }
+    },
+    {
+      "id": "transformer",
+      "attrs": {
+        "type": "concept"
+      }
+    },
+    {
+      "id": "neural networks",
+      "attrs": {
+        "type": "concept"
+      }
+    },
+    {
+      "id": "machine translation",
+      "attrs": {
+        "type": "concept"
+      }
+    },
+    {
+      "id": "encoder decoder",
+      "attrs": {
+        "type": "concept"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "attention mechanism",
+      "target": "transformer",
+      "attrs": {
+        "relation": "co-occurs",
+        "weight": 1.0
+      }
+    },
+    {
+      "source": "attention mechanism",
+      "target": "neural networks",
+      "attrs": {
+        "relation": "co-occurs",
+        "weight": 1.0
+      }
+    },
+    {
+      "source": "attention mechanism",
+      "target": "machine translation",
+      "attrs": {
+        "relation": "co-occurs",
+        "weight": 1.0
+      }
+    },
+    {
+      "source": "attention mechanism",
+      "target": "encoder decoder",
+      "attrs": {
+        "relation": "co-occurs",
+        "weight": 1.0
+      }
+    },
+    {
+      "source": "transformer",
+      "target": "neural networks",
+      "attrs": {
+        "relation": "co-occurs",
+        "weight": 1.0
+      }
+    },
+    {
+      "source": "transformer",
+      "target": "machine translation",
+      "attrs": {
+        "relation": "co-occurs",
+        "weight": 1.0
+      }
+    },
+    {
+      "source": "transformer",
+      "target": "encoder decoder",
+      "attrs": {
+        "relation": "co-occurs",
+        "weight": 1.0
+      }
+    },
+    {
+      "source": "neural networks",
+      "target": "machine translation",
+      "attrs": {
+        "relation": "co-occurs",
+        "weight": 1.0
+      }
+    },
+    {
+      "source": "neural networks",
+      "target": "encoder decoder",
+      "attrs": {
+        "relation": "co-occurs",
+        "weight": 1.0
+      }
+    },
+    {
+      "source": "machine translation",
+      "target": "encoder decoder",
+      "attrs": {
+        "relation": "co-occurs",
+        "weight": 1.0
+      }
+    }
+  ],
+  "concept_papers": {
+    "attention mechanism": [
+      "2017_Attention_Is_All_You_Need"
+    ],
+    "transformer": [
+      "2017_Attention_Is_All_You_Need"
+    ],
+    "neural networks": [
+      "2017_Attention_Is_All_You_Need"
+    ],
+    "machine translation": [
+      "2017_Attention_Is_All_You_Need"
+    ],
+    "encoder decoder": [
+      "2017_Attention_Is_All_You_Need"
+    ]
+  }
+}
