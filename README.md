@@ -9,6 +9,8 @@ A comprehensive system for organizing, analyzing, and synthesizing research rela
 - **Knowledge Graph**: Build and query a graph of interconnected research concepts
 - **CLI Tools**: Command-line interface for all operations
 - **Relationship Mapping**: Identify and track relationships between concepts
+- **ZPUE - Zero-Point Understanding Engine**: Adaptive language learning from scratch (no pretrained models)
+- **Semantic Field Visualization**: Continuous embedding spaces for learned concepts
 - **Bando Super Fractal Language Model**: Self-evolving AGI system with multi-paradigm optimization (requires numpy)
 
 ## Installation
@@ -38,6 +40,22 @@ This will demonstrate:
 - Concept extraction
 - Knowledge graph building
 - Bando Fractal Model integration (if numpy is available)
+
+### ZPUE Demonstrations
+
+```bash
+# Basic ZPUE demo
+PYTHONPATH=src python3 -m ssi_codex.zpue_demo basic
+
+# Research integration
+PYTHONPATH=src python3 -m ssi_codex.zpue_demo research
+
+# Interactive mode - chat with ZPUE
+PYTHONPATH=src python3 -m ssi_codex.zpue_demo interactive
+
+# All demos
+PYTHONPATH=src python3 -m ssi_codex.zpue_demo all
+```
 
 ### Adding a Research Paper
 
@@ -207,6 +225,48 @@ result = sflm.step(
 # Check if code evolved
 if result['evolved_code'] != result['input']:
     print(f"New variant created: Gen{sflm.growth_engine.generation}")
+```
+
+### Using ZPUE (Zero-Point Understanding Engine)
+
+```python
+from ssi_codex import ZeroPointUnderstandingEngine
+
+# Basic ZPUE - learns from scratch
+zpue = ZeroPointUnderstandingEngine()
+
+# Learn from text
+zpue.update_model("machine learning uses neural networks")
+zpue.update_model("deep learning is a type of machine learning")
+
+# Generate response
+response = zpue.generate_response(length=10)
+print(f"ZPUE: {response}")
+
+# Get statistics
+stats = zpue.get_stats()
+print(f"Learned vocabulary: {stats['vocab_size']} tokens")
+```
+
+### Using Enhanced ZPUE with Semantic Fields
+
+```python
+from ssi_codex import EnhancedZPUE  # Requires numpy
+
+# Enhanced with semantic understanding
+zpue = EnhancedZPUE(embedding_dim=64)
+
+# Interactive learning
+result = zpue.interact_enhanced("artificial intelligence learns patterns")
+print(f"Response: {result['response']}")
+
+# Get semantic insights
+insights = zpue.get_semantic_insights('learning')
+print(f"Similar to 'learning': {insights['similar_tokens'][:5]}")
+
+# Visualize semantic space
+viz = zpue.visualize_semantic_space(method='pca', n_components=2)
+print(f"Visualized {len(viz['tokens'])} tokens in semantic space")
 ```
 
 ## Configuration
