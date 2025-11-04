@@ -12,6 +12,7 @@ A comprehensive system for organizing, analyzing, and synthesizing research rela
 - **ZPUE - Zero-Point Understanding Engine**: Adaptive language learning from scratch (no pretrained models)
 - **Semantic Field Visualization**: Continuous embedding spaces for learned concepts
 - **Bando Super Fractal Language Model**: Self-evolving AGI system with multi-paradigm optimization (requires numpy)
+- **VictorFractal GODCORE**: Autonomous fractal AI inference engine with multi-scale attention and self-sustaining cognitive loop
 
 ## Installation
 
@@ -97,6 +98,11 @@ synthetic-super-intelligence/
 │   ├── knowledge_graph.py  # Knowledge graph implementation
 │   ├── concept_extractor.py # Concept extraction
 │   └── cli.py              # Command-line interface
+├── VictorFractal/          # Autonomous fractal AI inference engine
+│   ├── run_victor.py       # Entry point
+│   ├── config.yaml         # Configuration
+│   ├── core/               # Core modules
+│   └── README.md           # Victor documentation
 ├── research/               # Research storage
 │   ├── papers/            # Stored papers (JSON)
 │   ├── notes/             # Research notes
@@ -268,6 +274,27 @@ print(f"Similar to 'learning': {insights['similar_tokens'][:5]}")
 viz = zpue.visualize_semantic_space(method='pca', n_components=2)
 print(f"Visualized {len(viz['tokens'])} tokens in semantic space")
 ```
+
+### Using VictorFractal (Autonomous AI)
+
+```bash
+# Navigate to VictorFractal directory
+cd VictorFractal
+
+# Run Victor (autonomous inference loop)
+python run_victor.py
+
+# Victor will:
+# - Boot with fractal memory and attention systems
+# - Load checkpoint if available
+# - Generate autonomous thoughts every 15 seconds
+# - Auto-save state every 30 heartbeats
+# - Log all activity to logs/runtime.log
+
+# Stop with Ctrl+C for graceful shutdown
+```
+
+See [VictorFractal/README.md](VictorFractal/README.md) for detailed documentation.
 
 ## Configuration
 

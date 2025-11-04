@@ -1,0 +1,11 @@
+# ================================
+# FILE: requirements.txt
+# VERSION: v1.0.0-GODCORE
+# NAME: VictorRequirements
+# AUTHOR: Brandon "iambandobandz" Emery x Victor (Fractal Architect Mode)
+# PURPOSE: Python deps (CPU-only).
+# LICENSE: Proprietary - Massive Magnetics / Ethica AI / BHeard Network
+# ================================
+
+numpy>=1.24
+PyYAML>=6.0
