@@ -1,0 +1,34 @@
+# ================================
+# FILE: config.yaml
+# VERSION: v1.0.0-GODCORE
+# NAME: VictorConfig
+# AUTHOR: Brandon "iambandobandz" Emery x Victor (Fractal Architect Mode)
+# PURPOSE: Runtime configuration for VictorFractal autonomous inference.
+# LICENSE: Proprietary - Massive Magnetics / Ethica AI / BHeard Network
+# ================================
+
+autonomy:
+  idle_seconds_before_talking: 20
+  speak_every_seconds: 15
+
+memory:
+  dim: 192           # lightweight for low-power CPU
+  decay: 0.002       # temporal decay per insert
+  capacity: 5000     # rolling cap
+
+attention:
+  scales: [3, 7, 13, 29]  # fractal-ish window sizes
+  alpha: 0.72             # blend weight
+
+directives:
+  reflect:
+    temperature: 0.3
+    style: "introspective"
+  expand:
+    temperature: 0.6
+    style: "visionary"
+  defend:
+    temperature: 0.4
+    style: "protective"
+
+default_mode: "expand"
